@@ -1,0 +1,198 @@
+
+
+Started GET "/" for 127.0.0.1 at 2015-05-04 21:39:40 -0300
+
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+	bin/rake db:migrate RAILS_ENV=development
+
+):
+  activerecord (4.2.1) lib/active_record/migration.rb:393:in `check_pending!'
+  activerecord (4.2.1) lib/active_record/migration.rb:374:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:88:in `call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:88:in `_run_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:776:in `_run_call_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.1.2) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /home/ubuntu/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/ubuntu/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/ubuntu/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/ubuntu/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.3ms)
+  Rendered /home/ubuntu/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.2ms)
+  Rendered /home/ubuntu/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (4.9ms)
+  Rendered /home/ubuntu/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (73.6ms)
+  Rendered /home/ubuntu/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /home/ubuntu/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/ubuntu/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/ubuntu/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/ubuntu/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (65.7ms)
+  Rendered /home/ubuntu/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/ubuntu/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /home/ubuntu/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (128.7ms)
+  [1m[36m (295.2ms)[0m  [1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (50.6ms)[0m  CREATE UNIQUE INDEX `unique_schema_migrations`  ON `schema_migrations` (`version`) 
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to CreatePessoas (20150505003408)
+  [1m[35m (4.5ms)[0m  CREATE TABLE `pessoas` (`id` int(11) auto_increment PRIMARY KEY, `nome` varchar(255), `telefone` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.1ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20150505003408')
+  [1m[36m (12.2ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.3ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+  [1m[36m (44.4ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'agenda_development'
+  AND fk.table_name = 'pessoas'
+[0m
+  [1m[35m (0.2ms)[0m  SHOW CREATE TABLE `pessoas`
+
+
+Started GET "/" for 127.0.0.1 at 2015-05-04 21:40:36 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /home/ubuntu/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/railties-4.2.1/lib/rails/templates/rails/welcome/index.html.erb (2.3ms)
+Completed 200 OK in 112ms (Views: 58.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-05-04 21:43:40 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (1.9ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by PessoasController#index as HTML
+  [1m[35mPessoa Load (0.4ms)[0m  SELECT `pessoas`.* FROM `pessoas`
+  Rendered pessoas/index.html.erb within layouts/application (31.5ms)
+Completed 200 OK in 3329ms (Views: 3279.4ms | ActiveRecord: 25.3ms)
+
+
+Started GET "/assets/pessoas.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-05-04 21:43:44 -0300
+
+
+Started GET "/assets/scaffolds.self-2954395c5b02b238ffc6a9f3ce390ee3c42c632f30b007c055e729f8f7b48ba6.css?body=1" for 127.0.0.1 at 2015-05-04 21:43:44 -0300
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-05-04 21:43:44 -0300
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-05-04 21:43:44 -0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-05-04 21:43:44 -0300
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 127.0.0.1 at 2015-05-04 21:43:44 -0300
+
+
+Started GET "/assets/pessoas.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-05-04 21:43:44 -0300
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-05-04 21:43:44 -0300
+
+
+Started GET "/pessoas/new" for 127.0.0.1 at 2015-05-04 21:43:57 -0300
+Processing by PessoasController#new as HTML
+  Rendered pessoas/_form.html.erb (112.7ms)
+  Rendered pessoas/new.html.erb within layouts/application (126.3ms)
+Completed 200 OK in 299ms (Views: 251.3ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/pessoas" for 127.0.0.1 at 2015-05-04 21:44:10 -0300
+Processing by PessoasController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"DVrbFzbocajxpLZ2qok1lN8xPtgYWTU9kuvBvusuvGfNzv5RtJx1c5R9Qh/dI4guv8I48TcjEha+ljAOPxr64g==", "pessoa"=>{"nome"=>"t1", "telefone"=>"3123-2345"}, "commit"=>"Create Pessoa"}
+  [1m[36m (2.6ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (42.2ms)[0m  INSERT INTO `pessoas` (`nome`, `telefone`, `created_at`, `updated_at`) VALUES ('t1', '3123-2345', '2015-05-05 00:44:10', '2015-05-05 00:44:10')
+  [1m[36m (27.7ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/pessoas/1
+Completed 302 Found in 80ms (ActiveRecord: 72.5ms)
+
+
+Started GET "/pessoas/1" for 127.0.0.1 at 2015-05-04 21:44:11 -0300
+Processing by PessoasController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mPessoa Load (4.7ms)[0m  SELECT  `pessoas`.* FROM `pessoas` WHERE `pessoas`.`id` = 1 LIMIT 1
+  Rendered pessoas/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 213ms (Views: 130.6ms | ActiveRecord: 4.7ms)
+
+
+Started GET "/pessoas" for 127.0.0.1 at 2015-05-04 21:44:14 -0300
+Processing by PessoasController#index as HTML
+  [1m[36mPessoa Load (0.4ms)[0m  [1mSELECT `pessoas`.* FROM `pessoas`[0m
+  Rendered pessoas/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 85ms (Views: 83.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/pessoas" for 127.0.0.1 at 2015-05-04 21:56:50 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by PessoasController#index as HTML
+  [1m[35mPessoa Load (0.2ms)[0m  SELECT `pessoas`.* FROM `pessoas`
+  Rendered pessoas/index.html.erb within layouts/application (20.9ms)
+Completed 200 OK in 542ms (Views: 517.7ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/pessoas.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-05-04 21:56:51 -0300
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 127.0.0.1 at 2015-05-04 21:56:51 -0300
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-05-04 21:56:51 -0300
+
+
+Started GET "/assets/scaffolds.self-2954395c5b02b238ffc6a9f3ce390ee3c42c632f30b007c055e729f8f7b48ba6.css?body=1" for 127.0.0.1 at 2015-05-04 21:56:51 -0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-05-04 21:56:51 -0300
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-05-04 21:56:51 -0300
+
+
+Started GET "/assets/pessoas.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-05-04 21:56:51 -0300
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-05-04 21:56:51 -0300
+
+
+Started GET "/pessoas/new" for 127.0.0.1 at 2015-05-04 21:56:52 -0300
+Processing by PessoasController#new as HTML
+  Rendered pessoas/_form.html.erb (44.5ms)
+  Rendered pessoas/new.html.erb within layouts/application (48.9ms)
+Completed 200 OK in 127ms (Views: 125.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/pessoas" for 127.0.0.1 at 2015-05-04 21:56:53 -0300
+Processing by PessoasController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"IktGZJdiNmiqVWDPAGk1DGDTy/gkERCJP9GxV/hqaQ3i32MiFRYys8+MlKZ3w4i2ACDN0QtrN6ITrEDnLF4viA==", "pessoa"=>{"nome"=>"", "telefone"=>""}, "commit"=>"Create Pessoa"}
+  [1m[36m (0.5ms)[0m  [1mBEGIN[0m
+  [1m[35m (2.1ms)[0m  ROLLBACK
+  Rendered pessoas/_form.html.erb (9.0ms)
+  Rendered pessoas/new.html.erb within layouts/application (17.5ms)
+Completed 200 OK in 115ms (Views: 100.5ms | ActiveRecord: 2.6ms)
